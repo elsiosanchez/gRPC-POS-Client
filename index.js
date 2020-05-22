@@ -187,7 +187,7 @@ class PointOfSales {
 
           return {
             recordCount: response.getRecordcount(),
-            orderLineList: response.getOrderLinesList().map(orderLine => {
+            orderLineList: response.getOrderlinesList().map(orderLine => {
               return convertOrderLineFromGRPC(orderLine);
             }),
             nextPageToken: response.getNextPageToken()
